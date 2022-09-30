@@ -4,6 +4,9 @@ FROM node:14
 #diretorio em que a imagem vai tratar como padrão
 WORKDIR /app-node
 
+#vai expor a aplicação na porta 3000
+EXPOSE 3000
+
 #copia todo o conteudo da pasta atual que está o Dockerfile (do host) para a pasta atual da imagem WORKDIR
 COPY . . 
 
